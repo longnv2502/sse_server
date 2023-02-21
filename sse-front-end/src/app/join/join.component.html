@@ -1,0 +1,17 @@
+<section style="height: 100vh; background-color: #eee;">
+  <div class="container py-5 h-100">
+
+    <div class="row h-100 d-flex justify-content-center align-items-center">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+        <form [formGroup]="joinForm" (ngSubmit)="join()">
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="flex: 1" id="talkbotId">Talkbot Id</span>
+            <input type="text" class="form-control" style="flex: 3" placeholder="Talkbot Id" aria-describedby="talkbotId" formControlName="talkbotId">
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
